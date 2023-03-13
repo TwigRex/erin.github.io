@@ -1,0 +1,78 @@
+/* the dark mode toggle */
+label {
+    position: fixed;
+    top: 90vh;
+    left: 10vw;
+    width: 116px;
+    height: 56px;
+    margin: 0 auto;
+    border: 2px solid var(--sky-blue);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease background-color;
+}
+.toggle {
+    position: absolute;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,.15);
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+label:hover {
+    background-color: #99E1D9;
+    transition: 0.5s ease-in-out; 
+}
+
+/* sun design */
+#sunBall {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--sun);
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    z-index: 1;
+}
+#point1 {
+    position: relative;
+    /* left: 1px; */
+}
+#point2 {
+    position: absolute;
+    transform: rotateZ(36deg);
+}
+.sun {
+    top: 0;
+    left: -7px;
+    font-size: 54px;
+    line-height: 28px;
+    color: var(--sun);
+    transition: 0.3s ease color;
+}
+/* moon design */
+#moon {
+    position: absolute;
+    bottom: -52px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--moon);
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+}
+/* makes the moon look like it slides in from left otherwise the cut out part looks weird*/
+#moon:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -17px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--sky-blue);
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+}

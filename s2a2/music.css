@@ -1,0 +1,43 @@
+#musicDay {
+    position: fixed;
+    top: 90vh;
+    right: 10vw;
+    height: 100vh;
+}
+#playButtonDay {
+    position: relative;
+    width: 118px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid var(--sky-blue);
+    color: var(--night-blue);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#playButtonDay:hover {
+    background-color: var(--sky-blue);
+    transition: 0.5s ease-in-out; 
+}
+
+#musicNight {
+    position: fixed;
+    right: 10vw;
+    top: 200vh;   
+    height: 100vh;
+}
+#playButtonNight {
+    width: 116px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+    border-color: transparent;
+    color: var(--moon);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#playButtonNight:hover {
+    border-color: var(--moon);
+}

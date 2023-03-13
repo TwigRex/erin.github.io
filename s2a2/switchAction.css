@@ -1,0 +1,40 @@
+/* the actual switch */
+#switch:checked + #content label{
+    background-color: var(--dark-blue);
+    border-color: transparent;
+}
+#switch:checked + #content label #moon{
+    bottom: 8px;
+}
+#switch:checked + #content label #moon::before{
+    background-color: var(--dark-blue);
+}
+#switch:checked + #content label:hover {
+    border-color: var(--moon);
+    transition: 0.3s ease bottom;
+}
+#switch:checked + #content label #sunBall {
+    top: 3px;
+    left: 64px;
+    transform: scale(0.3);
+    background-color: var(--sun);
+}
+#switch:checked + #content label .sun {
+    color: var(--sun);
+}
+
+/* text + overlay */
+#switch:checked + #content #text {
+    color: rgb(56, 56, 56);
+}
+#switch:checked + #content #overlay {
+    background-color: rgba(44, 42, 60, 0.5);
+}
+
+/* making play button change */
+#switch:checked + #content #musicDay {
+    top: 200vh;
+}
+#switch:checked + #content #musicNight {
+    top: 90vh;
+}

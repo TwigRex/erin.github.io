@@ -1,0 +1,112 @@
+:root {
+    /* colors */
+    --sky-blue: #84e0e9;
+    --night-blue: #36b0ca;
+    --dark-blue: #12375f;
+    --sun: #f1de98;
+    --moon: #FAE8EB;
+    --message: #645b57;
+    --overlay: #f9f9e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--sky-blue);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--night-blue);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+::-webkit-scrollbar-corner {
+    background: var(--sky-blue);
+}
+
+/* getting rid of highlight htat sometimes happens when you active a description */
+::selection {
+    background: transparent;
+}
+
+/* hiding checkbox */
+[type="checkbox"] {
+    display: none;
+}
+
+/* wrapper for entire thing */
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 200vh;
+    top: 0;
+    left: 50vh;
+    margin: 0;
+    transition: background 0.2s linear;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    color: var(--message);
+    /* font-weight: bolder; */
+    font-size: 6vh;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#options {
+    position: absolute;
+    top: 90%;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fadeOut {
+    animation: fadeOut 3s linear forwards;
+}
+@keyframes fadeOut {
+    from {opacity: .5}
+    to {opacity: 0}
+}
+
+#message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200vh;
+    height: 100vh;
+}
+#text {
+    position: absolute;
+    top: 70vh;
+    left: calc((100vw - 1000px) / 2);
+    width: 400vh;
+    font-size: var(--msgFontSize);
+    font-family: 'Shantell Sans', cursive;
+    color: var(--message);
+    pointer-events: none;
+}
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200vh;
+    background-color: var(--overlay);
+    pointer-events: none;  
+}

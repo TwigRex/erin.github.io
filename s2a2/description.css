@@ -1,0 +1,221 @@
+.hover:hover {
+    cursor: help;
+}
+#spikey {
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+    width: 20vw;
+    height: 200px;
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: center;
+    /* background-color: black; */
+}
+#spikey::before{
+    content: "spiky plant";
+}
+#spikey:active {
+    top: 25vh;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    color: var(--dGreen);
+}
+
+#canvas {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    width: 15vh;
+    height: 40vh;
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#canvas::before{
+    content: "so artsy";
+}
+#canvas:active {
+    top: 50vh;
+    width: 15vh;
+    height: 8vh;
+    line-height: 80%;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--canvas);
+}
+
+#chair{
+    position: absolute;
+    bottom: 10vh;
+    left: 3vh;
+    width: 35vh;
+    height: 17vh;
+    opacity: 0%;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#chair::before{
+    content: "have a seat!";
+}
+#chair:active {
+    bottom: 12vh;
+    left: 7vh;
+    width: 26vh;
+    height: 7vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--chair);
+}
+
+#window {
+    position: absolute;
+    top: 13vh;
+    left: 25vh;
+    width: 30vh;
+    height: 65vh;
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#window::before{
+    content: "enjoying the view?";
+}
+#window:active {
+    top: 30vh;
+    left: 22vh;
+    width: auto;
+    height: 7vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    color: var(--window);
+}
+
+#sofa {
+    position: absolute;
+    top: 60vh;
+    left: 59vh;
+    width: 40vh;
+    height: 20vh;
+    /* background-color: black; */
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#sofa::before{
+    content: "nap?";
+}
+#sofa:active {
+    top: 65vh;
+    left: 75vh;
+    width: auto;
+    height: 7vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    color: var(--sofa2);
+}
+
+#kitchen {
+    position: absolute;
+    top: 40vh;
+    left: 97vh;
+    width: 30vh;
+    height: 35vh;
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#kitchen::before{
+    content: "snack time!";
+}
+#kitchen:active {
+    top: 50vh;
+    left: 100vh;
+    width: 24vh;
+    height: 7vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--kitchen);
+}
+
+#plant {
+    position: absolute;
+    top: 5vh;
+    left: 131vh;
+    width: 25vh;
+    height: 37vh;
+    opacity: 0;
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#plant::before{
+    content: "more plants";
+}
+#plant:active {
+    top: 15vh;
+    left: 131vh;
+    width: 25vh;
+    height: 7vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--plantGreen);
+}
+
+#tv {
+    position: absolute;
+    top: 60vh;
+    left: 145vh;
+    width: 13vh;
+    height: 26vh;
+    opacity: 0%;
+    font-family: 'Shantell Sans', cursive;
+    font-style: italic;
+    font-size: var(--fontSize);
+    text-align: left;
+}
+#tv::before{
+    content: "House of Dragons?";
+}
+#tv:active {
+    top: 65vh;
+    left: 140vh;
+    width: 20vh;
+    height: 12vh;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 15px;
+    color: var(--tv);
+}

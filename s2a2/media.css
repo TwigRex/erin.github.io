@@ -1,0 +1,69 @@
+@media screen and (max-width: 767px) {
+    body {
+        cursor: help;
+    }
+    #content {
+        background-color: var(--overlay);  
+        height: 200vh;
+        width: 400vh;
+    }
+    #overlay {
+        height: 100vh;
+        width: 200vh;
+    }
+    #switch:checked + #content {
+        background-color: var(--moon);  
+        height: 200vh;
+        width: 400vh;
+    }
+    #message {
+        height: 100vh;
+        width: 200vh;
+    }
+    #text::before {
+        content: "I think you should use a bigger screen... but enjoy the music I guess!";
+    }
+    :root {
+        --msgFontSize: 10vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content {
+        background-image: url(RoomDay.jpeg);   
+        height: 200vh;
+        width: 400vh;
+    }
+    #overlay {
+        height: 200vh;
+        width: 400vh;
+    }
+    #switch:checked + #content {
+        background-image: url(roomNight.png);
+    }
+    #text::before {
+        content: "Welcome to my home! Please explore!";
+    }
+    :root {
+        --msgFontSize: 15vh;
+    }
+}
+@media screen and (min-width: 1024px) {
+    #content {
+        background-image: url(roomDay.jpeg);   
+        height: 400vh;
+        width: 800vh;
+    }
+    #overlay {
+        height: 400vh;
+        width: 800vh;
+    }
+    #switch:checked + #content {
+        background-image: url(roomNight.png);
+    }
+    #text::before {
+        content: "Welcome to my home! Please explore!";
+    }
+    :root {
+        --msgFontSize: 20vh;
+    }
+}
