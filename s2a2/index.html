@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="switch.css">
+    <link rel="stylesheet" href="switchAction.css">
+    <link rel="stylesheet" href="music.css">
+
+    <!-- i was trying to get it so you could actually "explore" and go around hover over things but I couldn't get it to work while letting it adapt to screen size -->
+    <link rel="stylesheet" href="description.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- hidden checkbox -->
+    <input type="checkbox" id="switch">
+  
+    <!-- wrapper -->
+        <div id="content">
+            <img src="broken" alt="An artful illustration of a room if I do say so myself">
+            <span role="img" aria-label="an illsutration of a room"></span>
+
+            <!-- welcome home msg -->
+            <div id="message">
+                <div id="overlay" class="fadeOut"></div>
+                <div id="text"></div>
+            </div>
+            
+            <!-- wrapper for the two buttons -->
+            <div id="options">
+                <!-- calling in the switch -->
+                <label for="switch" title="Day or night?">
+                    <div id="sunBall">
+                        <div class="sun" id="point1">★</div>
+                        <div class="sun" id="point2">★</div>
+                    </div>
+                    <div id="moon"></div>
+                </label>
+                <!-- calling in the play button -->
+                <div id="musicDay">
+                    <button id="playButtonDay" title="Play early morning vibes!">Play</button>
+                    <audio id="audioPlayerDay" src="morning.mp3" type=""></audio> 
+                </div>
+                <div id="musicNight">
+                    <button id="playButtonNight" title="Play a night lullaby!">Play</button>
+                    <audio id="audioPlayerNight" src="night.mp3" type=""></audio> 
+                </div>
+            </div>
+    
+            
+            <!-- <div class="hover">
+                <div id="spikey"></div>
+                <div id="canvas"></div>
+                <div id="chair"></div>
+                <div id="window"></div>
+                <div id="sofa"></div>
+                <div id="kitchen"></div>
+                <div id="plant"></div>
+                <div id="tv"></div>
+            </div> -->
+    
+        </div>
+    </div>
+
+    <!-- for the music button -->
+    <script src="script.js"></script>
+</body>
+  
