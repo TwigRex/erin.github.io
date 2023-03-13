@@ -1,0 +1,85 @@
+.backgroundcolor {
+    position: relative;
+    height: 600px;
+    width: 800px;
+    background: linear-gradient(to bottom, #653964, #dab29e);
+}
+.backgroundcolorFinal {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #653964, #dab29e);
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centerWidth {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#emptyCup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    /* background-color: black; */
+}
+
+/* white space in bw */
+#emptyWhiteBox {
+    background-color: white;
+    height: 600%
+}
+
+#toppings {
+    height: 50%;
+    width: 50%;
+}
+#toppingsTable {
+    border-collapse: collapse;
+    position: absolute;
+    margin-top: 1%;
+}
+#toppingsTable td, #toppingsTable th {
+    /* border: 10px solid black; */
+    text-align: center;
+}
+
+#drinks {
+    height: 50%;
+    width: 50%;
+}
+#drinksTable {
+    border-collapse: collapse;
+    position: absolute;
+    margin-top: 1%;
+}
+#drinksTable td, #toppingsTable th {
+    /* border: 10px solid black; */
+    text-align: center;
+}
+
+#loop {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    /* background-color: black; */
+}
+.image {
+    height: 90%;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(Dali_Page1.png);
+}

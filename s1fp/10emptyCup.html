@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="styleButtons.css">
+    <link rel="stylesheet" href="styleFonts.css">
+    <link rel="stylesheet" href="styleScale.css">
+    <link rel="stylesheet" href="styleMsgs.css">
+    <link rel="stylesheet" href="styleWrappersandTables.css">
+</head>
+
+<body>
+    <div class="center">
+        <div class="backgroundcolor">
+            <div id="cupMsg">
+                <p class="normalFont">Do you like your cup?</p>
+
+                <!-- no button -->
+                <div id="boxNo">
+                    <a class="noButton" href="#m1">
+                        <p class="noFont">No...</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- empty cup drawing -->
+    <div id="emptyCup" class="center">
+        <img src="Cup Empty.png" class="scaleBoba">
+    </div>
+
+    <!-- when you click the no -->
+    <div id="m1" class="overlay">
+        <div class="center">
+            <div class="msg">
+                <p class="wrongMsgFont">Ungrateful much?</p>
+                <a class="close" href="#">&times;</a>
+                <div class="wrongMsgContentFont">I dumped everything out for you...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- white space in bw -->
+    <div id="emptyWhiteBox"></div>
+
+    <!-- yes button -->
+    <div class="centerWidth">
+        <div class="boxYes">
+            <a class="yesButton" href="3toppings.html">
+                <p>Yes!</p>
+            </a>
+        </div> 
+    </div>
+</body>

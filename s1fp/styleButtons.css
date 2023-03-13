@@ -1,0 +1,121 @@
+/* container for the invis button for the logos*/
+.box {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* background for the msg */
+.msg {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    height: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* container for the viisble button */
+.boxVisible {
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    background: #aface3;
+    padding: 35px;
+    border-radius: 40px/50px;
+    background-clip: padding-box;
+    text-align: center;
+}
+.visibleButton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    cursor: pointer;
+    width: 10%;
+    color: black;
+    transition: all 0.3s ease-out;
+}
+
+.boxYes {
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    background: #c49cb6;
+    border-radius: 40px/50px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.yesButton {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 50px;
+    transition: all 0.3s ease-out;
+}
+
+#boxNo {
+    /* background-color: black; */
+    position: absolute;
+    top: 520px;
+    width: 100%;
+    height: 60px;
+}
+.noButton {
+    left: 90%;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+#boxOk {
+    /* background-color: black; */
+    position: absolute;
+    top: 520px;
+    width: 100%;
+    height: 60px;
+}
+.okButton {
+    left: 90%;
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+.tasteButton {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-top: 15%;
+    text-align: right;
+    color: white;
+    transition: all 0.3s ease-out;
+}

@@ -1,0 +1,110 @@
+.normalFont {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 80%;
+    font-size: 40px;
+    text-align: left;
+}
+.normalFontCenter {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.whereFont {
+    /* background-color: white; */
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 60%;
+    font-size: 50px;
+    padding: 40px;
+    text-align: center;
+}
+.whichFont {
+    /* background-color: white; */
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.angryFont {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    color: #a13542;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    opacity: 0%;
+    animation: fadeIn 3s;
+    animation-delay: 5s;
+}
+
+.labelFont {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+}
+.toppingLabelFont {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+}
+.drinksLabelFont {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: relative;
+    width: 100%;
+    font-size: 100%;
+}
+
+.wrongMsgFont {
+    margin-top: 10%;
+    font-size: 40px;
+    color: grey;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.wrongMsgContentFont {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    max-height: 30%;
+    overflow: auto;
+}
+
+.rightMsgFont {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    font-size: 40px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.finalFont {
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    position: absolute;
+    margin-top: 10%;
+    width: 80%;
+    font-size: 60px;
+    text-align: left;
+}

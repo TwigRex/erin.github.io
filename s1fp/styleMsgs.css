@@ -1,0 +1,90 @@
+/* the why are you taking so long */
+#angryMsg {
+    position: relative;
+    /* background-color: black; */
+    top: 55%;
+    height: 10%;
+    width: 100%;
+    pointer-events: none;
+}
+#angryMsg2 {
+    position: relative;
+    /* background-color: black; */
+    top: 56%;
+    height: 10%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#cupMsg {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    /* background-color: black; */
+}
+#toppingsMsg {
+    position: absolute;
+    bottom: 410px;
+    left: 0;
+    width: 100%;
+    /* background-color: black; */
+}
+#drinksMsg {
+    position: absolute;
+    bottom: 410px;
+    left: 0;
+    width: 100%;
+    /* background-color: black; */
+}
+
+/* trying to get the logos and the where msg to switch for page1*/
+#logos {
+    background: linear-gradient(to bottom, #653964, #dab29e);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-play-state: paused;
+}
+#WhereMsg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    animation: fadeOut 1s linear forwards;
+    animation-play-state: paused;
+}
+#logos:hover {
+    animation-play-state: running;
+}
+#logos:hover ~ #whereMsg {
+    animation-play-state: running;
+}
+
+/* logos table w the icons*/
+#logosTable {
+    border-collapse: collapse;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#logosTable td, #logosTable th {
+    /* border: 10px solid black; */
+    min-width: 150px;
+    height: 170px;
+    text-align: center;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
