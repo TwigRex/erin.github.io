@@ -1,0 +1,307 @@
+#minimsg {
+    font-family: 'Shantell Sans', cursive;
+    font-size: var(--fontSize);
+    text-align: center;
+}
+.hover:hover {
+    cursor: help;
+}
+#spikey {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 160px;
+    height: 360px;
+    opacity: 0;
+}
+#spikey::before{
+    content: "spiky plant";
+}
+#spikey:active {
+    top: 200px;
+    left: 80px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--green);
+}
+
+#canvas {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 50px;
+    height: 200px;
+    opacity: 0;
+}
+#canvas::before{
+    content: "so artsy";
+}
+#canvas:active {
+    top: 280px;
+    left: 2px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--brown);
+}
+
+#chair{
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    width: 200px;
+    height: 210px;
+    opacity: 0;
+}
+#chair::before{
+    content: "have a seat!";
+}
+#chair:active {
+    bottom: 120px;
+    left: 6vh;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--red);
+}
+
+#window {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 160px;
+    height: 400px;
+    opacity: 0;
+}
+#window::before{
+    content: "enjoying the view?";
+}
+#window:active {
+    top: 230px;
+    left: 230px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--night-blue);
+}
+
+#art {
+    position: absolute;
+    top: 0px;
+    left: 330px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+}
+#art::before{
+    content: "our art!";
+}
+#art:active {
+    top: 20px;
+    left: 340px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--green);
+}
+
+#sofa {
+    position: absolute;
+    top: 350px;
+    left: 380px;
+    width: 270px;
+    height: 100px;
+    opacity: 0;
+}
+#sofa::before{
+    content: "nap?";
+}
+#sofa:active {
+    top: 370px;
+    left: 490px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--brown);
+}
+
+#coffee {
+    position: absolute;
+    bottom: 5px;
+    left: 570px;
+    width: 40px;
+    height: 50px;
+    opacity: 0;
+}
+#coffee::before{
+    content: "you little coffee addict";
+}
+#coffee:active {
+    bottom: 50px;
+    left: 380px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--brown);
+}
+
+#sunspot {
+    position: absolute;
+    bottom: 70px;
+    left: 680px;
+    width: 300px;
+    height: 80px;
+    opacity: 0;
+}
+#sunspot::before{
+    content: "a purrfect spot for a kitty";
+}
+#sunspot:active {
+    bottom: 100px;
+    left: 710px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--night-blue);
+}
+
+#sewing {
+    position: absolute;
+    bottom: 0px;
+    left: 660px;
+    width: 100px;
+    height: 80px;
+    opacity: 0;
+}
+#sewing::before{
+    content: "self-sufficient I see";
+}
+#sewing:active {
+    bottom: 40px;
+    left: 630px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--purple);
+}
+
+#kitchen {
+    position: absolute;
+    top: 200px;
+    left: 630px;
+    width: 180px;
+    height: 220px;
+    opacity: 0;
+}
+#kitchen::before{
+    content: "snack time!";
+}
+#kitchen:active {
+    top: 280px;
+    left: 660px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--purple);
+}
+
+#plant {
+    position: absolute;
+    top: 240px;
+    left: 770px;
+    width: 80px;
+    height: 200px;
+    opacity: 0;
+}
+#plant::before{
+    content: "more plants of course";
+}
+#plant:active {
+    top: 310px;
+    left: 720px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--green);
+}
+
+#plant2 {
+    position: absolute;
+    top: 0px;
+    right: 290px;
+    width: 150px;
+    height: 160px;
+    opacity: 0;
+}
+#plant2::before{
+    content: "quota for hanging plants: ✓";
+}
+#plant2:active {
+    top: 50px;
+    right: 230px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--green);
+}
+
+#tv {
+    position: absolute;
+    top: 340px;
+    right: 270px;
+    width: 90px;
+    height: 100px;
+    opacity: 0;
+    font-style: italic;
+}
+#tv::before{
+    content: "House of Dragons?";
+}
+#tv:active {
+    top: 360px;
+    right: 220px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    opacity: 75%;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    color: var(--grey);
+}
