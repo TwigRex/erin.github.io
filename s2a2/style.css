@@ -298,6 +298,61 @@ label:hover {
 }
 
 /* media */
+ @media screen and (max-width: 767px) {
+    #content {
+        left: 0;
+        top: 0;
+        width: 80vh;
+        height: 40vh;
+        overflow: visible;
+    }
+    img {
+        width: 500%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    #message {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    #miniimg {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+    #minimsg {
+        opacity: 0;
+        cursor: default;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1289px) {
+    #minimsg {
+        opacity: 0;
+        cursor: default;
+    }
+    #content {
+        position: absolute;
+        left: calc((100vw - 80vh) / 2);
+        top: calc((100vh - 40vh) / 2);
+        width: 80vh;
+        height: 40vh;
+        overflow: scroll;
+    }
+    img {
+        width: 300%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    #message {
+        position: absolute;
+        left: 60px;
+        font-size: 50px;
+        font-family: 'Shantell Sans', cursive;
+        color: var(--dayback)
+    }
+}
 @media screen and (min-width: 1290px) {
     #content {
         position: absolute;
