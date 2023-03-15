@@ -361,6 +361,6 @@ label:hover {
     img {
         width: 100%;
         height: auto;
-        left: calc((100vw - 100vh) / 2);
+        left: 0;
     }
 }
