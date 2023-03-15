@@ -1,0 +1,373 @@
+/* colors */
+:root {
+    --sky-blue: #84e0e9;
+    --dayback: #e1b592;
+    --nightback: #2a4060;
+    --night-blue: #36b0ca;
+    --dark-blue: #12375f;
+    --sun: #f1de98;
+    --moon: #FAE8EB;
+    --message: #645b57;
+    --overlay: #f9f9e0;
+    --green: #555642;
+    --brown: #64433a;
+    --red: #5f3543;
+    --purple: #86819c;
+    --grey: #645b57;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--sky-blue);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--night-blue);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+}
+::-webkit-scrollbar-corner {
+    background: var(--sky-blue);
+}
+
+/* getting rid of highlight htat sometimes happens when you active a description */
+::selection {
+    background: transparent;
+}
+
+/* hiding checkbox */
+[type="checkbox"] {
+    display: none;
+}
+
+/* wrappers */
+#wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--dayback);
+    width: 100vw;
+    height: 100vh;
+}
+#content {
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;    
+    overflow: hidden;
+}
+/* to make the night versions appear */
+#night {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100vh;
+    max-height: 50vh;
+    text-align: center;
+    justify-content: center;
+    opacity: 0;
+}
+#mininight {
+    position: fixed;
+    top: 1vh; 
+    left: 1vw;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* defining img and alt text */
+img {
+    color: var(--message);
+    font-family: 'Shantell Sans', cursive;
+    /* opacity: 30%; */
+}
+
+/* wrapper for the switch and the play btn */
+#options {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#message {
+    top: 40px;
+    font-size: 50px;
+    font-family: 'Shantell Sans', cursive;
+    color: var(--brown)
+}
+
+#miniimg {
+    position: fixed;
+    top: 1vh; 
+    left: 1vw;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+/* music play bttn behavior */
+#musicDay {
+    position: fixed;
+    top: 90vh;
+    right: 10vw;
+    height: 100vh;
+}
+#playButtonDay {
+    position: relative;
+    width: 118px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid var(--sky-blue);
+    font-family: 'Shantell Sans', cursive;    
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--night-blue);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#playButtonDay:hover {
+    background-color: var(--sky-blue);
+    transition: 0.5s ease-in-out; 
+}
+#musicNight {
+    position: fixed;
+    right: 10vw;
+    top: 200vh;   
+    height: 100vh;
+}
+#playButtonNight {
+    width: 116px;
+    height: 56px;
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+    border-color: transparent;
+    font-family: 'Shantell Sans', cursive;    
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--moon);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#playButtonNight:hover {
+    border-color: var(--moon);
+    transition: 0.5s ease-in-out; 
+}
+
+/* switch styling */
+/* the dark mode toggle */
+label {
+    position: fixed;
+    top: 90vh;
+    left: 10vw;
+    width: 116px;
+    height: 56px;
+    margin: 0 auto;
+    border: 2px solid var(--sky-blue);
+    border-radius: 56px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s ease background-color;
+}
+.toggle {
+    position: absolute;
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,.15);
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+label:hover {
+    background-color: #99E1D9;
+    transition: 0.5s ease-in-out; 
+}
+/* sun design */
+#sunBall {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--sun);
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    z-index: 1;
+}
+#point1 {
+    position: relative;
+    /* left: 1px; */
+}
+#point2 {
+    position: absolute;
+    transform: rotateZ(36deg);
+}
+.sun {
+    top: 0;
+    left: -7px;
+    font-size: 54px;
+    line-height: 28px;
+    color: var(--sun);
+    transition: 0.3s ease color;
+}
+/* moon design */
+#moon {
+    position: absolute;
+    bottom: -52px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--moon);
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+}
+/* makes the moon look like it slides in from left otherwise the cut out part looks weird*/
+#moon:before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -17px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--sky-blue);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* switch actions */
+/* the actual switch styling going from sun to moon*/
+#switch:checked + #wrapper #content label{
+    background-color: var(--dark-blue);
+    border-color: transparent;
+    transition: 0.3s ease-in-out; 
+}
+#switch:checked + #wrapper #content label #moon{
+    bottom: 8px;
+    transition: 0.3s ease-in-out; 
+}
+#switch:checked + #wrapper #content label #moon::before{
+    background-color: var(--dark-blue);
+    transition: 0.3s ease-in-out;    
+}
+#switch:checked + #wrapper #content label:hover {
+    border-color: var(--moon);
+    transition: 0.5s ease-in-out;
+}
+#switch:checked + #wrapper #content label #sunBall {
+    top: 3px;
+    left: 64px;
+    transform: scale(0.3);
+    background-color: var(--sun);
+    transition: 0.3s ease-in-out; 
+}
+#switch:checked + #wrapper #content label .sun {
+    color: var(--sun);
+    transition: 0.3s ease-in-out; 
+}
+/* text + overlay */
+#switch:checked + #wrapper  {
+    background-color: var(--nightback);
+    transition: 0.3s ease-in-out;
+}
+#switch:checked + #wrapper #content #night {
+    transition: 0.3s ease-in-out;
+    opacity:1;
+}
+#switch:checked + #wrapper #content #message {
+    transition: 0.3s ease-in-out;
+    color: var(--purple);
+}
+#switch:checked + #wrapper #content #miniimg #mininight{
+    opacity:  1;
+}
+/* making play button change */
+#switch:checked + #wrapper #content #musicDay {
+    top: 200vh;
+}
+#switch:checked + #wrapper #content #musicNight {
+    top: 90vh;
+}
+
+/* media */
+/* @media screen and (max-width: 767px) {
+    #content {
+        left: 0;
+        top: 0;
+        width: 80vh;
+        height: 40vh;
+        overflow: visible;
+    }
+    img {
+        width: 500%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    #message {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+    #miniimg {
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+    #minimsg {
+        opacity: 0;
+        cursor: default;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1289px) {
+    #minimsg {
+        opacity: 0;
+        cursor: default;
+    }
+    #content {
+        position: absolute;
+        left: calc((100vw - 80vh) / 2);
+        top: calc((100vh - 40vh) / 2);
+        width: 80vh;
+        height: 40vh;
+        overflow: scroll;
+    }
+    img {
+        width: 300%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+    #message {
+        position: absolute;
+        left: 60px;
+        font-size: 50px;
+        font-family: 'Shantell Sans', cursive;
+        color: var(--dayback)
+    }
+} */
+/* min width=1290px */
+@media screen and (min-width: 0px) {
+    #content {
+        position: absolute;
+        top: calc(50vh / 2);
+        left: calc((100vw - 100vh) / 2);
+        max-width: 100vh;
+        max-height: 50vh;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        left: 0;
+    }
+    #message {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,82 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="description.css">    
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- hidden checkbox -->
+    <input type="checkbox" id="switch">
+  
+    <!-- wrapper -->
+    <div id="wrapper">
+        <div id="content" class="center">
+            <!-- the basic img -->
+            <img src="roomDay.jpeg" alt="an artful illustration of a home in the daytime light if I do say so myself">
+            <!-- night version of the img -->
+            <div id="night">
+                <img src="roomNight.png" alt="likewise, a soothing nighttime view of the home">
+            </div>
+
+            <div id="message">
+                Please feel free to explore!
+            </div>
+
+            <div id="options">
+                <!-- calling in the switch -->
+                <label for="switch" title="Day or night?">
+                    <div id="sunBall">
+                        <div class="sun" id="point1">★</div>
+                        <div class="sun" id="point2">★</div>
+                    </div>
+                    <div id="moon"></div>
+                </label>
+                <!-- calling in the play button for both day and night-->
+                <div id="musicDay">
+                    <button id="playButtonDay" title="Play early morning vibes!">Play</button>
+                    <audio id="audioPlayerDay" src="morning.mp3" type=""></audio> 
+                </div>
+                <div id="musicNight">
+                    <button id="playButtonNight" title="Play a night lullaby!">Play</button>
+                    <audio id="audioPlayerNight" src="night.mp3" type=""></audio> 
+                </div>
+            </div>
+
+            <!-- the mini imgs in the small viewport -->
+            <div id="miniimg">
+                <img src="roomDay.jpeg" alt="so you can see it better">
+                <div id="mininight">
+                    <img src="roomNight.png" alt="so you can see it better">
+                </div>
+            </div>
+
+            <!-- the messages that appear after clicking in big viewport-->
+            <div id="minimsg" class="hover">
+                <div id="spikey"></div>
+                <div id="canvas"></div>
+                <div id="chair"></div>
+                <div id="floor"></div>
+                <div id="art"></div>
+                <div id="window"></div>
+                <div id="sofa"></div>
+                <div id="coffee"></div>
+                <div id="sunspot"></div>
+                <div id="sewing"></div>
+                <div id="kitchen"></div>
+                <div id="plant"></div>
+                <div id="plant2"></div>
+                <div id="bar"></div>
+                <div id="tv"></div>
+                <div id="spikey2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js to make the play bttn work -->
+    <script src="script.js"></script>
+</body>
+  
