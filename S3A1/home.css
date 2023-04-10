@@ -1,0 +1,29 @@
+.caption {
+  font-size: 15px;
+  padding-top: 6px;
+}
+.choiceWrap {
+  position: absolute;
+  width: 90vw;
+  top: 50%;
+  /* left: 50%; */
+  margin: auto;
+  transform: translate(0, -40%);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 33%;
+  max-width: 33%;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.column img:hover {
+  filter: drop-shadow(0 0 2vw rgb(211 205 215 / 0.4));
+}
