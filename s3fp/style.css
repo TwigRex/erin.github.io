@@ -1,0 +1,196 @@
+:root {
+    --color1: black;
+    --color2: white;
+    --bg: white;
+    --dimension: 20px;
+    --bday: #331E36;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    overflow:hidden;
+}
+
+#chibi {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;    
+}
+#chibi:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+.wrapper {
+    position: absolute;
+    overflow: hidden;
+    margin: auto;
+    width: calc(var(--dimension) * 21);
+    height: calc(var(--dimension) * 21);
+    display: grid;
+    grid-template-columns: repeat(21, var(--dimension));
+    grid-template-rows: repeat(21, var(--dimension));
+}
+
+#pikaCode {
+    position: absolute;
+    /* border: solid black; */
+    top: -64px;
+    left: -64px;
+    opacity: 0;
+    z-index: 0;
+}
+#pika {
+    position: absolute;
+    bottom: 15px;
+    right: -15;
+    opacity: 0;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+#pika:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.big {
+    z-index: 0;
+}
+.border1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color2);    
+    width: calc(8 * var(--dimension));
+    height: calc(8 * var(--dimension));
+}
+.border2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--color2);    
+    width: calc(8 * var(--dimension));
+    height: calc(8 * var(--dimension));
+}
+.border3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color2);    
+    width: calc(8 * var(--dimension));
+    height: calc(8 * var(--dimension));
+}
+.sq1 {
+    position: absolute;
+    width: calc(7 * var(--dimension));
+    height: calc(7 * var(--dimension));
+    background-color: var(--color1);
+    top: 0;
+    left: 0;
+}
+.sq1mini {
+    position: absolute;
+    width: calc(5 * var(--dimension));
+    height: calc(5 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color2);
+}
+.sq1mini2 {
+    position: absolute;
+    width: calc(3 * var(--dimension));
+    height: calc(3 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color1);
+}
+.sq2 {
+    position: absolute;
+    width: calc(7 * var(--dimension));
+    height: calc(7 * var(--dimension));
+    background-color: var(--color1);
+    top: 0;
+    right: 0;
+}
+.sq2mini {
+    position: absolute;
+    width: calc(5 * var(--dimension));
+    height: calc(5 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color2);
+}
+.sq2mini2 {
+    position: absolute;
+    width: calc(3 * var(--dimension));
+    height: calc(3 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color1);
+}
+.sq3 {
+    position: absolute;
+    width: calc(7 * var(--dimension));
+    height: calc(7 * var(--dimension));
+    background-color: var(--color1);
+    bottom: 0;
+    left: 0;
+}
+.sq3mini {
+    position: absolute;
+    width: calc(5 * var(--dimension));
+    height: calc(5 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color2);
+}
+.sq3mini2 {
+    position: absolute;
+    width: calc(3 * var(--dimension));
+    height: calc(3 * var(--dimension));
+    top: var(--dimension);
+    left: var(--dimension);
+    background-color: var(--color1);
+}
+
+.tile {
+    background-color: var(--color2);
+    z-index: -2;
+    /* margin: 20px; */
+}
+.tile:nth-child(odd){
+    background-color: var(--color1);
+}
+
+/* trying to fix the QR code sizing; longer note in js */
+/* @media screen and (max-width: 767px) {
+    :root {
+        --dimension: 15px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --dimension: 20px;
+    }
+} */
