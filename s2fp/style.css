@@ -1,0 +1,15 @@
+:root {
+    /* colors */
+    --t1a: black;
+    --t1b: white;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--t1a), var(--t1b));
+    overflow: hidden;
+    user-select: none;
+}
