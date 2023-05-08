@@ -1,0 +1,49 @@
+body {
+    padding: 30 30 30 30;
+    background: linear-gradient(to bottom right, #6fa0cb, #db9f83);
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: "bely-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #32303b;
+    font-size: 60px;
+}
+h3 {
+    font-family: "bely", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #32303b;
+}
+i {
+    font-family: "bely", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+p {
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #32303b;
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #906572;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6c4b60;
+  }
