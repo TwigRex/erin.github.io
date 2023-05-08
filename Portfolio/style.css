@@ -1,0 +1,188 @@
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #32303b;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #906572;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6c4b60;
+}
+::-webkit-scrollbar-corner {
+    background: #32303b;   
+}
+
+#portfolioSvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background-color: black;
+}
+
+/* s2a2 */
+#explore1 {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Explore1_Image:hover ~ #explore1 {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+#explore3 {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Explore3_Image:hover ~ #explore3 {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s3a2 */
+#notif {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Notif_Image:hover ~ #notif {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s3a1  */
+#otter {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Otter_Image:hover ~ #otter {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s2fp */
+#clock {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Clock_Image:hover ~ #clock {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+    z-index: 1;
+}
+
+/* s3fp */
+#qr {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#QR_Code_Image:hover ~ #qr {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s1a1 */
+#tenten {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Tenten_Image:hover ~ #tenten {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s1a2 */
+#ziggy {
+    opacity: 0;
+    transition: opacity .55s ease-in-out;
+}
+#Ziggy_Image:hover ~ #ziggy {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* s1fp */
+#boba {
+    opacity: 0;
+    transition: opacity .55s ease-in-out; 
+}
+#Boba_Image:hover ~ #boba {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* readings */
+#readings {
+    opacity: 0;
+    transition: opacity .55s ease-in-out; 
+}
+#Readings_Image:hover ~ #readings {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* bio */
+#bio {
+    opacity: 0;
+    transition: opacity .55s ease-in-out; 
+}
+#Bio_Image:hover ~ #bio {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+}
+
+/* fonts and text layout ig */
+#welcome {
+    position: absolute;
+    top:0;
+    left: 40px;
+    width: 60vw;
+    color: #e0eae9;
+    pointer-events: none;
+}
+p {
+    font-family: "bely", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+
+/* making sure it's too big to see all at once */
+@media screen and (max-width: 767px) {
+    svg {
+        width: 1200px;
+        height: 1200px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    svg {
+        width: 1800px;
+        height: 1800px;
+    }
+    p {
+        font-size: 60px;
+    }
+    #welcome {
+        left: 50px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    svg {
+        width: 2400px;
+        height: 2400px;
+    }
+    p {
+        font-size: 80px;
+    }
+    #welcome {
+        left: 70px;
+    }
+}
