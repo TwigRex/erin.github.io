@@ -29,12 +29,14 @@ function setup() {
     st = color(250, 240, 207);
     lh = color(208, 204, 219);
     lm = color(195, 188, 214);
+    rootChange();
   } else if (hour() >= 10, hour() <= 16) {
     g1 = color(176, 204, 214);
     g2 = color(147, 180, 191);
     st = color(189, 213, 222);
     lh = color(187, 226, 240);
     lm = color(100, 146, 163);
+    rootChange();
   } else if (hour() >= 17, hour() <= 23) {
     g1 = color(222, 147, 118);
     g2 = color(247, 222, 163);
@@ -48,6 +50,7 @@ function setup() {
     st = color(112, 135, 156);
     lh = color(127, 153, 176);
     lm = color(84, 111, 135);
+    rootChange();
   }
 }
 
