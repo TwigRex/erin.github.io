@@ -1,0 +1,72 @@
+#wrapper{
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    scroll-snap-align: start;
+    background-image: linear-gradient(to bottom right, #4c7abe, #3a46c4, #c69662, #d4ba40);
+}
+
+#title{
+    position: relative;
+    top: 30px;
+    height: 50px;
+    font-size: 20px;
+    color: #beffff;
+}
+
+#description{
+    position: relative;
+    top: 60px;
+    /* margin: 30px auto 50px auto; */
+    line-height: 17px;
+    text-align: justify;
+    max-width: calc(100vw - 220px - 55px - 55px - 55px);
+    left: 55px;
+    color: #b4f9fa;
+    max-height: 490px;
+    overflow:scroll;
+}
+
+.page {
+    /* height: 477px; */
+    width: 220px;
+    position: absolute;
+    right: 55px;
+    bottom: 60px;
+}
+
+#page2 {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease-in-out;
+
+}
+#page1:hover ~ #page2 {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .55s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}  
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+/* .page{
+    margin: 0px 30px 0px 30px;
+    width: 20%;
+} */
+
+#wrap2 {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+} 

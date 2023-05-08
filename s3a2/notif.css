@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+:root {
+    --whiteOp: rgba(255, 255, 255, 0.918);
+    --blackishGrey: #222;
+    --lightOpGrey: rgba(255, 255, 255, 0.4);
+    --lightGrey: rgb(95, 95, 95);
+}
+* {
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y proximity;
+    user-select: none; 
+}
+
+a:link {
+    color: black;
+}
+
+/* scrollbar disappear! */
+::-webkit-scrollbar {
+    width: 0px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#bigWrap {
+    /* width: 100vw;
+    height: 300vh;
+    overflow-x: hidden; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#frontWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cdn.osxdaily.com/wp-content/uploads/2022/06/ios-16-default-wallpaper-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: var(--whiteOp);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+/* #carouselWrapper {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    scroll-snap-align: start;
+
+} */
+#lastWrapper {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://cdn.osxdaily.com/wp-content/uploads/2022/06/ios-16-default-wallpaper-light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    color: var(--whiteOp);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scroll-snap-align: start;
+}
+
+
+.wrap {
+    position: absolute;
+    width: 90vw;
+    left: calc((100vw - 90vw) / 2);
+    /* padding: 10px 15px; */
+}
+.wrap .time {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.wrap .time h1 {
+    font-size: 100px;
+    font-weight: 600;
+}
+.wrap .time .date {
+    font-size: 20px;
+    display: inherit;
+    margin-top: -16px;
+    
+}
+
+
+.iconWrap {
+    top: 10px;
+    position: absolute;
+    right: 30px;
+    width: 130px;
+    filter: invert(100%);
+}
+.signal {
+    padding-top: 1%;
+    min-width: 40px;
+    width: 5%;
+    height: auto;
+}
+.wifi {
+    width: 4%;
+    min-width: 40px;
+    height: auto;
+}
+.battery {
+    width: 5%;
+    min-width: 40px;
+    height: auto;
+}
+
+/* notifications styling */
+.container {
+    width: 95%;
+    margin: auto;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 16px;
+    color: var(--blackishGrey);
+}
+
+.pushWrapper {
+    margin-top: 75px;
+}
+.pushBox {
+    display: none;
+    width: 90%;
+    position: relative;
+    border-radius: 12px;
+    background: var(--lightOpGrey);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    z-index: 1;
+    padding: 10px 12px;
+    margin: 8px 8px;
+    overflow: hidden;
+}
+.pushBox:last-child {
+    display: block;
+}
+.pushBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 12px;
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
+    z-index: -1;
+    
+}
+
+.pushTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;  
+}
+.pushTop .col {
+    display: flex;
+    align-items: center;
+}
+
+.pushImgwrap {
+    margin: 2px 5px 0 0;   
+}
+
+.pushIcon {
+    max-width: 25px;
+    width: auto;
+}
+.pushTitle {
+    color: var(--lightGrey);
+    text-transform: uppercase;
+}
+.pushTime {
+    font-size: 14px;
+    color: var(--lightGrey);
+}
+.pushPerson {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
