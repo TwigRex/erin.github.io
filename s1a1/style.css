@@ -1,0 +1,123 @@
+html {
+  color: #ffffff;
+  background-color: black;
+    justify-content: center;
+}
+
+#mono {
+  font-family: monospace;
+  font-size: 6px;
+  line-height: 8px;
+  letter-spacing: 0px;
+}
+
+p {
+  padding-top: 30px;
+  padding-right: 0;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+#image {
+  position: absolute; 
+  top: 62px;
+  left: 20em;
+}
+
+w {
+  color: white;
+}
+
+/*flame*/ f {
+  color: #e25822;
+}
+/*coquelicot*/ c {
+  color: #FF3800;
+}
+/*red pigment*/ red {
+  color: #ED1C24;
+}
+/*terra cotta*/ tc {
+  color: #E2725B;
+}
+/*liver organ*/ lo {
+  color: #6e382c;
+}
+/*middle red purple*/ mrp {
+  color: #A55353;
+}
+/*gamboge*/ g {
+  color: #F5B367;
+}
+/*orange yellow*/ oy {
+  color: #F5BD1F;
+}
+/*mango tango*/ mt {
+  color: #FF8243;
+}
+/*deep champagne*/ dc {
+  color: #FAD6A5;
+}
+/*cadmium orange*/ ca {
+  color: #ED872D;
+}
+/*burnt orange*/ bo {
+  color: #CC5500;
+}
+/*mac and cheese*/ mc {
+  color: #FFBD88;
+}
+/*tumbleweed*/ t {
+  color: #DEAA88;
+}
+/*almond*/ a {
+  color: #EFDECD;
+}
+/*fawn*/ f {
+  color: #E5AA70;
+}
+/*russet*/ ru {
+  color: #7F5328;
+}
+/*seal brown*/ seal {
+  color: #59260B;
+}
+/*van dyke brown*/ vdb {
+  color: #664228;
+}
+/*dark lava*/ dlava {
+  color: #483C32;
+}
+/*smokey black*/ sb {
+  color: #36291C;
+}
+/*jet*/ j {
+  color: #38322D;
+}
+/*gold web golden*/ gwg {
+  color: #FED511;
+}
+/*max yellow red*/ myr {
+  color: #F2BA49;
+}
+/*pale spring bud*/ psb {
+  color: #ECEBBD;
+}
+/*granny smith apple*/ gsa {
+  color: #A8E4A0;
+}
+/*forest green*/ fg {
+  color: #014421;
+}
+/*space cadet*/ sc {
+  color: #1D2951;
+}
+/*max blue*/ mb {
+  color: #47ABCC;
+}
+/*tufts blue*/ tb {
+  color: #3E8EDE;
+}
+/*light cornflower blue*/ lcb {
+  color: #93CCEA;
+}
